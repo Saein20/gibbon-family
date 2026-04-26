@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GibbonFamily | A Global Network of Gibbon Researchers</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">🦧</span>
+        <span class="logo-text">GibbonFamily</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/species.html">Gibbon Species</a></li>
+        <li><a href="pages/research.html">Research</a></li>
+        <li><a href="pages/data.html">Data Sharing</a></li>
+        <li><a href="pages/join.html">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Introducing</p>
+      <h1 class="hero-title">GibbonFamily</h1>
+      <p class="hero-subtitle">A Global Network of Gibbon Researchers</p>
+      <p class="hero-desc">Connecting wild and captive gibbon researchers across the world — to share knowledge, pool data, and amplify the science of gibbons.</p>
+      <div class="hero-cta">
+        <a href="pages/join.html" class="btn btn-primary">Join the Network</a>
+        <a href="pages/about.html" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="gibbon-silhouette">
+        <svg viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+          <!-- Canopy background foliage -->
+          <ellipse cx="60"  cy="30"  rx="38" ry="22" fill="#8ab86a" opacity="0.5"/>
+          <ellipse cx="130" cy="18"  rx="32" ry="19" fill="#6a9a50" opacity="0.45"/>
+          <ellipse cx="200" cy="24"  rx="42" ry="24" fill="#7aaa5a" opacity="0.5"/>
+          <ellipse cx="270" cy="22"  rx="30" ry="18" fill="#8ab86a" opacity="0.4"/>
+          <ellipse cx="40"  cy="48"  rx="22" ry="14" fill="#5a8a40" opacity="0.4"/>
+          <ellipse cx="300" cy="44"  rx="24" ry="14" fill="#6a9a50" opacity="0.35"/>
+
+          <!-- Main branch — diagonal, gibbon swinging left-to-right -->
+          <path d="M10 72 Q160 48 310 60" stroke="#4a6a34" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <!-- Branch texture -->
+          <path d="M10 72 Q160 48 310 60" stroke="#3a5a28" stroke-width="3" stroke-linecap="round" stroke-dasharray="18 14" fill="none" opacity="0.4"/>
+
+          <!-- Small side twigs -->
+          <path d="M80 58 Q72 42 68 30" stroke="#4a6a34" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <path d="M220 54 Q232 38 240 26" stroke="#4a6a34" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+          <!--
+            BRACHIATION POSE:
+            Gibbon mid-swing — right arm fully extended overhead gripping branch,
+            body angled forward, left arm swinging forward-low,
+            legs tucked up behind (knees bent, feet near body)
+          -->
+
+          <!-- RIGHT ARM — fully extended up-right, gripping branch (leading arm) -->
+          <!-- Upper arm: shoulder to elbow -->
+          <path d="M178 148 Q210 108 228 72" stroke="#2d2420" stroke-width="16" stroke-linecap="round" fill="none"/>
+          <!-- Forearm: elbow to hand -->
+          <path d="M228 72 Q244 60 256 58" stroke="#2d2420" stroke-width="13" stroke-linecap="round" fill="none"/>
+          <!-- Right hand gripping branch -->
+          <ellipse cx="258" cy="59" rx="11" ry="8" fill="#2d2420" transform="rotate(-15 258 59)"/>
+          <!-- Finger hooks -->
+          <path d="M252 54 Q248 48 252 44" stroke="#2d2420" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <path d="M259 52 Q257 46 261 43" stroke="#2d2420" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <path d="M265 55 Q265 49 269 47" stroke="#2d2420" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+          <!-- BODY — torso angled, swinging forward -->
+          <!-- Chest/torso ellipse, tilted to show forward momentum -->
+          <ellipse cx="162" cy="188" rx="30" ry="42" fill="#2d2420" transform="rotate(15 162 188)"/>
+
+          <!-- HEAD — slightly forward of body, looking direction of travel -->
+          <circle cx="148" cy="148" r="26" fill="#2d2420"/>
+          <!-- Face mask (pale facial ring typical of many gibbon species) -->
+          <ellipse cx="148" cy="152" rx="16" ry="13" fill="#b89870"/>
+          <!-- Eyes — alert, direction of travel -->
+          <circle cx="142" cy="148" r="4.5" fill="#1a1008"/>
+          <circle cx="155" cy="147" r="4.5" fill="#1a1008"/>
+          <circle cx="143" cy="147" r="1.8" fill="white"/>
+          <circle cx="156" cy="146" r="1.8" fill="white"/>
+          <!-- Nose -->
+          <ellipse cx="149" cy="153" rx="4" ry="3" fill="#9a7850"/>
+
+          <!-- LEFT ARM — trailing/swinging forward low (the release arm) -->
+          <!-- Upper arm from shoulder forward-down -->
+          <path d="M138 162 Q108 178 88 196" stroke="#2d2420" stroke-width="15" stroke-linecap="round" fill="none"/>
+          <!-- Forearm extending further forward -->
+          <path d="M88 196 Q70 210 58 220" stroke="#2d2420" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <!-- Left hand — open, about to grab next branch -->
+          <ellipse cx="56" cy="222" rx="10" ry="7" fill="#2d2420" transform="rotate(30 56 222)"/>
+          <path d="M50 218 Q44 213 46 207" stroke="#2d2420" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <path d="M56 215 Q52 209 55 204" stroke="#2d2420" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <path d="M63 217 Q61 211 65 207" stroke="#2d2420" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+          <!-- LEGS — tucked up, knees bent, feet near rump (typical brachiation) -->
+          <!-- Left leg: hip → knee tucked up-back -->
+          <path d="M150 224 Q132 248 126 268" stroke="#2d2420" stroke-width="13" stroke-linecap="round" fill="none"/>
+          <!-- Left lower leg: knee → foot tucked back -->
+          <path d="M126 268 Q118 286 122 298" stroke="#2d2420" stroke-width="11" stroke-linecap="round" fill="none"/>
+          <!-- Left foot -->
+          <ellipse cx="122" cy="301" rx="15" ry="8" fill="#2d2420" transform="rotate(-20 122 301)"/>
+
+          <!-- Right leg: hip → knee (slightly offset) -->
+          <path d="M172 220 Q160 246 158 268" stroke="#2d2420" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <!-- Right lower leg → foot -->
+          <path d="M158 268 Q154 286 158 298" stroke="#2d2420" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <!-- Right foot -->
+          <ellipse cx="159" cy="301" rx="14" ry="7" fill="#2d2420" transform="rotate(10 159 301)"/>
+
+          <!-- Motion / speed lines behind gibbon -->
+          <path d="M195 170 Q215 165 235 168" stroke="#4a6a34" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.35"/>
+          <path d="M190 185 Q212 180 234 184" stroke="#4a6a34" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.25"/>
+          <path d="M194 200 Q218 195 238 200" stroke="#4a6a34" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.2"/>
+
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION STRIP -->
+  <section class="mission-strip">
+    <div class="container">
+      <div class="mission-grid">
+        <div class="mission-item">
+          <div class="mission-icon">🌿</div>
+          <h3>Share Knowledge</h3>
+          <p>Connect field researchers and captive specialists to exchange practical experience and tackle shared challenges.</p>
+        </div>
+        <div class="mission-item">
+          <div class="mission-icon">📊</div>
+          <h3>Collaborative Data</h3>
+          <p>Facilitate voluntary data sharing for comparative analyses across gibbon species, subspecies, and populations.</p>
+        </div>
+        <div class="mission-item">
+          <div class="mission-icon">🧠</div>
+          <h3>Gibbon Cognition</h3>
+          <p>Elevate research on gibbon cognition in wild and captive settings as a priority area within primate science.</p>
+        </div>
+        <div class="mission-item">
+          <div class="mission-icon">🤝</div>
+          <h3>Build Community</h3>
+          <p>Strengthen ties for future collaborative grants and raise the profile of gibbons in global conservation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT TEASER -->
+  <section class="section-about">
+    <div class="container two-col">
+      <div class="about-text">
+        <p class="section-label">Who We Are</p>
+        <h2>A grassroots network, built by researchers for researchers</h2>
+        <p>GibbonFamily is a global, researcher-led network dedicated to gibbons — the world's smallest and most endangered apes. We unite scientists working across wild sites in Southeast Asia and Africa with those studying gibbons in zoos and sanctuaries worldwide.</p>
+        <p>Inspired by initiatives like MacaqueNet, we believe that collaborative, cross-site research is essential for understanding gibbon behaviour, cognition, and conservation needs — questions no single study can answer alone.</p>
+        <a href="pages/about.html" class="btn btn-outline">Read More About Us</a>
+      </div>
+      <div class="about-map">
+        <div class="map-placeholder">
+          <div class="map-label">Research sites worldwide</div>
+          <div class="map-dots">
+            <!-- SE Asia cluster -->
+            <div class="dot dot-wild" style="top:52%;left:68%" title="Indonesia"></div>
+            <div class="dot dot-wild" style="top:47%;left:65%" title="Malaysia"></div>
+            <div class="dot dot-wild" style="top:44%;left:64%" title="Thailand"></div>
+            <div class="dot dot-wild" style="top:43%;left:67%" title="Laos/Vietnam"></div>
+            <div class="dot dot-wild" style="top:42%;left:60%" title="Myanmar"></div>
+            <div class="dot dot-wild" style="top:39%;left:58%" title="India/Bangladesh"></div>
+            <!-- China -->
+            <div class="dot dot-wild" style="top:38%;left:70%" title="China (Hainan)"></div>
+            <!-- Captive -->
+            <div class="dot dot-captive" style="top:32%;left:26%" title="UK"></div>
+            <div class="dot dot-captive" style="top:33%;left:30%" title="Germany"></div>
+            <div class="dot dot-captive" style="top:30%;left:20%" title="USA (East)"></div>
+            <div class="dot dot-captive" style="top:29%;left:14%" title="USA (West)"></div>
+            <div class="dot dot-captive" style="top:36%;left:32%" title="France"></div>
+            <div class="dot dot-captive" style="top:68%;left:80%" title="Australia"></div>
+          </div>
+          <div class="map-legend">
+            <span class="legend-item"><span class="dot dot-wild"></span> Wild sites</span>
+            <span class="legend-item"><span class="dot dot-captive"></span> Captive sites</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH AREAS -->
+  <section class="section-research bg-tint">
+    <div class="container">
+      <p class="section-label">Research Focus</p>
+      <h2 class="section-title">Our Collaborative Projects</h2>
+      <p class="section-intro">GibbonFamily aims to catalyse collaborative studies that address questions spanning multiple species and sites. These are our initial focus areas.</p>
+      <div class="research-grid">
+        <a href="pages/research.html#cognition" class="research-card">
+          <div class="rc-tag">Flagship</div>
+          <div class="rc-emoji">🧠</div>
+          <h3>Gibbon Cognition</h3>
+          <p>Cross-site comparative research on problem solving, tool use, social learning, and executive function in both wild and captive gibbons.</p>
+          <span class="rc-link">Learn more →</span>
+        </a>
+        <a href="pages/research.html#behaviour" class="research-card">
+          <div class="rc-emoji">👫</div>
+          <h3>Social Behaviour & Bonds</h3>
+          <p>Exploring gibbon pair-bond structure, social relationships, and how they compare across monogamous and non-monogamous contexts.</p>
+          <span class="rc-link">Learn more →</span>
+        </a>
+        <a href="pages/research.html#ecology" class="research-card">
+          <div class="rc-emoji">🌳</div>
+          <h3>Ecology & Conservation</h3>
+          <p>Habitat requirements, ranging patterns, and population viability across fragmented landscapes and protected areas.</p>
+          <span class="rc-link">Learn more →</span>
+        </a>
+        <a href="pages/research.html#vocalisation" class="research-card">
+          <div class="rc-emoji">🎵</div>
+          <h3>Vocalisation & Communication</h3>
+          <p>Comparative analysis of gibbon song — one of the most complex vocal behaviours in non-human primates — across species and populations.</p>
+          <span class="rc-link">Learn more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GIBBON SPECIES TEASER -->
+  <section class="section-species">
+    <div class="container">
+      <p class="section-label">Our Study Species</p>
+      <h2 class="section-title">20 Species. One Network.</h2>
+      <p class="section-intro">Gibbons comprise 20 recognised species across four genera — <em>Hylobates</em>, <em>Hoolock</em>, <em>Nomascus</em>, and <em>Symphalangus</em>. All are threatened; many are critically endangered.</p>
+      <div class="species-strip">
+        <div class="species-pill">Lar gibbon</div>
+        <div class="species-pill">Siamang</div>
+        <div class="species-pill">Hoolock gibbon</div>
+        <div class="species-pill">Agile gibbon</div>
+        <div class="species-pill">Müller's gibbon</div>
+        <div class="species-pill">Northern white-cheeked gibbon</div>
+        <div class="species-pill">Cao vit gibbon</div>
+        <div class="species-pill">Kloss's gibbon</div>
+        <div class="species-pill em">+ more</div>
+      </div>
+      <a href="pages/species.html" class="btn btn-outline" style="margin-top:2rem">Explore All Species</a>
+    </div>
+  </section>
+
+  <!-- DATA SHARING -->
+  <section class="section-data bg-tint">
+    <div class="container two-col reverse">
+      <div class="data-text">
+        <p class="section-label">Data & Collaboration</p>
+        <h2>Towards a shared gibbon database</h2>
+        <p>We are building the foundations for voluntary data sharing among gibbon researchers. The long-term goal is a community-governed database that enables meta-analyses and cross-species comparisons — covering behaviour, ecology, cognition, and demographics.</p>
+        <p>Data sharing is always voluntary. We are committed to transparent governance, clear data agreements, and equitable credit for all contributors.</p>
+        <a href="pages/data.html" class="btn btn-outline">About Data Sharing</a>
+      </div>
+      <div class="data-visual">
+        <div class="data-card-stack">
+          <div class="dcard">
+            <div class="dcard-icon">🔬</div>
+            <div>
+              <strong>Behavioural data</strong>
+              <p>Focal observations, social matrices, activity budgets</p>
+            </div>
+          </div>
+          <div class="dcard">
+            <div class="dcard-icon">🧬</div>
+            <div>
+              <strong>Cognitive task data</strong>
+              <p>Experimental results from wild and captive studies</p>
+            </div>
+          </div>
+          <div class="dcard">
+            <div class="dcard-icon">🌍</div>
+            <div>
+              <strong>Ecological data</strong>
+              <p>Ranging, habitat use, population demographics</p>
+            </div>
+          </div>
+          <div class="dcard">
+            <div class="dcard-icon">🎤</div>
+            <div>
+              <strong>Acoustic data</strong>
+              <p>Song recordings and spectral analyses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN CTA -->
+  <section class="section-join">
+    <div class="container">
+      <div class="join-box">
+        <h2>Are you a gibbon researcher?</h2>
+        <p>Whether you work with wild populations or captive individuals — whether you are a senior scientist or an early-career researcher — GibbonFamily is for you.</p>
+        <div class="join-actions">
+          <a href="pages/join.html" class="btn btn-primary">Join GibbonFamily</a>
+          <a href="mailto:gibbonfamily@example.com" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🦧</span>
+        <span class="logo-text">GibbonFamily</span>
+        <p>A global grassroots network of gibbon researchers.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/species.html">Gibbon Species</a></li>
+          <li><a href="pages/research.html">Research</a></li>
+          <li><a href="pages/data.html">Data Sharing</a></li>
+          <li><a href="pages/join.html">Join Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:gibbonfamily@example.com">gibbonfamily@example.com</a></p>
+        <p>Follow us on social media</p>
+        <p style="margin-top:1rem;font-size:0.8rem;color:#aaa;">© 2025 GibbonFamily. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
