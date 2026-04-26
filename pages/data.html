@@ -1,1 +1,206 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Sharing — GibbonFamily</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">🦧</span>
+        <span class="logo-text">GibbonFamily</span>
+      </a>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="species.html">Gibbon Species</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="data.html" class="active">Data Sharing</a></li>
+        <li><a href="join.html">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Data Sharing</p>
+      <h1>Towards a Shared Database</h1>
+      <p>GibbonFamily is building the foundations for a community-governed, voluntary data sharing initiative to enable meta-analyses across gibbon species and populations.</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <p class="section-label">Our Approach</p>
+      <h2>Voluntary, equitable, and transparent</h2>
+      <p>Data sharing is entirely voluntary. GibbonFamily will never pressure researchers to contribute data, and data providers retain ownership of their datasets. The goal is a collaborative resource that benefits everyone in the network — contributors and users alike.</p>
+      <p>We are currently in the design phase: consulting with network members about what kinds of data they collect, what they would be willing to share, and what collaborative questions would be most valuable to answer together.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:2.5rem;">
+        <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;">
+          <div style="font-size:1.8rem;margin-bottom:0.75rem;">🔒</div>
+          <h3 style="margin-bottom:0.5rem;">Data ownership</h3>
+          <p style="font-size:0.88rem;">Contributors retain full ownership of their data. Sharing agreements define exactly how data may be used and by whom.</p>
+        </div>
+        <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;">
+          <div style="font-size:1.8rem;margin-bottom:0.75rem;">✍️</div>
+          <h3 style="margin-bottom:0.5rem;">Authorship credit</h3>
+          <p style="font-size:0.88rem;">All data contributors to collaborative analyses will receive appropriate authorship or acknowledgement, following clear, pre-agreed guidelines.</p>
+        </div>
+        <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;">
+          <div style="font-size:1.8rem;margin-bottom:0.75rem;">🏛️</div>
+          <h3 style="margin-bottom:0.5rem;">Community governance</h3>
+          <p style="font-size:0.88rem;">The database will be governed by a member committee with transparent decision-making processes.</p>
+        </div>
+        <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;">
+          <div style="font-size:1.8rem;margin-bottom:0.75rem;">📋</div>
+          <h3 style="margin-bottom:0.5rem;">Clear agreements</h3>
+          <p style="font-size:0.88rem;">Every data sharing arrangement will be governed by a written data sharing agreement, agreed before any data transfer occurs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section bg-tint">
+    <div class="container">
+      <p class="section-label">Data Types</p>
+      <h2>What kinds of data are we collecting?</h2>
+      <p>GibbonFamily is interested in a wide range of data types. You do not need to share all of these — even one dataset can make a difference to collaborative analyses.</p>
+
+      <div style="margin-top:2rem;">
+        <div style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid var(--border);">
+          <div style="font-size:1.5rem;flex-shrink:0;margin-top:2px;">🔬</div>
+          <div>
+            <strong style="font-size:0.95rem;color:var(--text);display:block;margin-bottom:0.25rem;">Behavioural data</strong>
+            <p style="font-size:0.88rem;margin:0;">Focal animal observations, social interaction matrices, activity budgets, agonistic and affiliative interactions, proximity data.</p>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid var(--border);">
+          <div style="font-size:1.5rem;flex-shrink:0;margin-top:2px;">🧬</div>
+          <div>
+            <strong style="font-size:0.95rem;color:var(--text);display:block;margin-bottom:0.25rem;">Cognitive task data</strong>
+            <p style="font-size:0.88rem;margin:0;">Results from experimental paradigms — including puzzle boxes, inhibitory control tasks, physical cognition tests — run in the wild or in captivity.</p>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid var(--border);">
+          <div style="font-size:1.5rem;flex-shrink:0;margin-top:2px;">🌍</div>
+          <div>
+            <strong style="font-size:0.95rem;color:var(--text);display:block;margin-bottom:0.25rem;">Ecological data</strong>
+            <p style="font-size:0.88rem;margin:0;">GPS tracking and ranging data, habitat use, population censuses, diet composition, phenology data.</p>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid var(--border);">
+          <div style="font-size:1.5rem;flex-shrink:0;margin-top:2px;">🎤</div>
+          <div>
+            <strong style="font-size:0.95rem;color:var(--text);display:block;margin-bottom:0.25rem;">Acoustic data</strong>
+            <p style="font-size:0.88rem;margin:0;">Song recordings, call catalogues, spectral analyses, playback experiment results.</p>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.25rem 0;">
+          <div style="font-size:1.5rem;flex-shrink:0;margin-top:2px;">📋</div>
+          <div>
+            <strong style="font-size:0.95rem;color:var(--text);display:block;margin-bottom:0.25rem;">Demographic & life history data</strong>
+            <p style="font-size:0.88rem;margin:0;">Birth records, survivorship, reproductive histories, individual identification data (wild or captive studbook data).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <p class="section-label">Timeline</p>
+      <h2>Building the database — step by step</h2>
+      <p>We are taking a careful, consultative approach to database development. The current priority is building the network and understanding what researchers need.</p>
+
+      <div style="margin-top:2rem;position:relative;">
+        <div style="position:absolute;left:16px;top:0;bottom:0;width:2px;background:var(--border);"></div>
+
+        <div style="display:flex;gap:1.5rem;margin-bottom:2rem;align-items:flex-start;">
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--forest);color:white;display:flex;align-items:center;justify-content:center;font-size:0.85rem;font-weight:500;flex-shrink:0;z-index:1;">1</div>
+          <div style="padding-top:4px;">
+            <strong style="color:var(--text);">Network building</strong> <span style="font-size:0.8rem;background:var(--canopy);color:var(--forest);padding:0.15rem 0.5rem;border-radius:99px;margin-left:0.5rem;">Current phase</span>
+            <p style="font-size:0.88rem;margin-top:0.25rem;">Register interest, connect researchers, establish communication channels.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:1.5rem;margin-bottom:2rem;align-items:flex-start;">
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--border);color:var(--text-mid);display:flex;align-items:center;justify-content:center;font-size:0.85rem;font-weight:500;flex-shrink:0;z-index:1;">2</div>
+          <div style="padding-top:4px;">
+            <strong style="color:var(--text-mid);">Needs assessment</strong>
+            <p style="font-size:0.88rem;color:var(--text-light);margin-top:0.25rem;">Survey members on data types, sharing willingness, governance preferences, and priority questions.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:1.5rem;margin-bottom:2rem;align-items:flex-start;">
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--border);color:var(--text-mid);display:flex;align-items:center;justify-content:center;font-size:0.85rem;font-weight:500;flex-shrink:0;z-index:1;">3</div>
+          <div style="padding-top:4px;">
+            <strong style="color:var(--text-mid);">Database design</strong>
+            <p style="font-size:0.88rem;color:var(--text-light);margin-top:0.25rem;">Design database structure, data templates, and governance framework in consultation with members.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:1.5rem;align-items:flex-start;">
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--border);color:var(--text-mid);display:flex;align-items:center;justify-content:center;font-size:0.85rem;font-weight:500;flex-shrink:0;z-index:1;">4</div>
+          <div style="padding-top:4px;">
+            <strong style="color:var(--text-mid);">Pilot analyses</strong>
+            <p style="font-size:0.88rem;color:var(--text-light);margin-top:0.25rem;">Run first collaborative analyses with founding members as proof-of-concept.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-join">
+    <div class="container">
+      <div class="join-box">
+        <h2>Interested in contributing data?</h2>
+        <p>There is no commitment required at this stage. Register your interest and we'll be in touch when the database design phase begins.</p>
+        <div class="join-actions">
+          <a href="join.html" class="btn btn-primary">Express Interest</a>
+          <a href="mailto:gibbonfamily@example.com" class="btn btn-outline">Ask a Question</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🦧</span>
+        <span class="logo-text">GibbonFamily</span>
+        <p>A global grassroots network of gibbon researchers.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="species.html">Gibbon Species</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="data.html">Data Sharing</a></li>
+          <li><a href="join.html">Join Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:gibbonfamily@example.com">gibbonfamily@example.com</a></p>
+        <p style="margin-top:1rem;font-size:0.8rem;color:#aaa;">© 2025 GibbonFamily.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
