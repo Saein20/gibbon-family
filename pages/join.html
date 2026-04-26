@@ -1,1 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join GibbonFamily</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">🦧</span>
+        <span class="logo-text">GibbonFamily</span>
+      </a>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="species.html">Gibbon Species</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="data.html">Data Sharing</a></li>
+        <li><a href="join.html" class="active">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Join GibbonFamily</p>
+      <h1>Register Your Interest</h1>
+      <p>GibbonFamily is open to all gibbon researchers — wild and captive, early-career and established. Tell us about yourself and we'll be in touch.</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+
+      <div>
+        <p class="section-label">Who should join?</p>
+        <h2>GibbonFamily is for you if…</h2>
+
+        <ul style="list-style:none;padding:0;margin-top:1.5rem;">
+          <li style="display:flex;gap:0.75rem;margin-bottom:1.25rem;align-items:flex-start;">
+            <span style="color:var(--forest-mid);font-size:1.2rem;flex-shrink:0;">✓</span>
+            <p style="margin:0;font-size:0.92rem;">You study gibbons in the wild — at any field site, on any species</p>
+          </li>
+          <li style="display:flex;gap:0.75rem;margin-bottom:1.25rem;align-items:flex-start;">
+            <span style="color:var(--forest-mid);font-size:1.2rem;flex-shrink:0;">✓</span>
+            <p style="margin:0;font-size:0.92rem;">You work with captive gibbons at a zoo, rescue centre, or sanctuary</p>
+          </li>
+          <li style="display:flex;gap:0.75rem;margin-bottom:1.25rem;align-items:flex-start;">
+            <span style="color:var(--forest-mid);font-size:1.2rem;flex-shrink:0;">✓</span>
+            <p style="margin:0;font-size:0.92rem;">You are a student or postdoc beginning your gibbon research career</p>
+          </li>
+          <li style="display:flex;gap:0.75rem;margin-bottom:1.25rem;align-items:flex-start;">
+            <span style="color:var(--forest-mid);font-size:1.2rem;flex-shrink:0;">✓</span>
+            <p style="margin:0;font-size:0.92rem;">You are interested in gibbon conservation, even if not currently active in research</p>
+          </li>
+          <li style="display:flex;gap:0.75rem;align-items:flex-start;">
+            <span style="color:var(--forest-mid);font-size:1.2rem;flex-shrink:0;">✓</span>
+            <p style="margin:0;font-size:0.92rem;">You want to contribute to building a connected, collaborative gibbon research community</p>
+          </li>
+        </ul>
+
+        <div style="background:var(--cream-dark);border-radius:var(--radius-lg);padding:1.5rem;margin-top:2.5rem;border:1.5px solid var(--border);">
+          <h4 style="margin-bottom:0.5rem;font-size:0.95rem;">What happens after you register?</h4>
+          <p style="font-size:0.85rem;margin:0;color:var(--text-mid);">We'll send you a welcome email and add you to the GibbonFamily mailing list. As the network grows, we'll organise virtual meetings, share updates on collaborative projects, and invite you to contribute to shaping GibbonFamily's future direction.</p>
+        </div>
+      </div>
+
+      <div>
+        <form class="join-form" id="joinForm" onsubmit="handleSubmit(event)">
+          <h3 style="margin-bottom:1.5rem;font-size:1.3rem;">Registration form</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First name *</label>
+              <input type="text" id="fname" name="fname" required placeholder="Jane">
+            </div>
+            <div class="form-group">
+              <label for="lname">Last name *</label>
+              <input type="text" id="lname" name="lname" required placeholder="Smith">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" required placeholder="jane.smith@university.edu">
+          </div>
+
+          <div class="form-group">
+            <label for="institution">Institution / Organisation *</label>
+            <input type="text" id="institution" name="institution" required placeholder="University of...">
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country *</label>
+            <input type="text" id="country" name="country" required placeholder="e.g. United Kingdom">
+          </div>
+
+          <div class="form-group">
+            <label for="role">Career stage</label>
+            <select id="role" name="role">
+              <option value="">Select...</option>
+              <option>Undergraduate student</option>
+              <option>Masters student</option>
+              <option>PhD student</option>
+              <option>Postdoctoral researcher</option>
+              <option>Research associate / scientist</option>
+              <option>Lecturer / Assistant Professor</option>
+              <option>Senior researcher / Professor</option>
+              <option>Zoo / sanctuary researcher</option>
+              <option>Conservation practitioner</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="setting">Research setting</label>
+            <select id="setting" name="setting">
+              <option value="">Select...</option>
+              <option>Wild only</option>
+              <option>Captive only</option>
+              <option>Both wild and captive</option>
+              <option>Not currently active in research</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="species">Species you work with (if applicable)</label>
+            <input type="text" id="species" name="species" placeholder="e.g. Hylobates lar, Nomascus leucogenys">
+          </div>
+
+          <div class="form-group">
+            <label for="interest">Research interests / What would you like to get from GibbonFamily?</label>
+            <textarea id="interest" name="interest" placeholder="Tell us a little about your research and what you hope GibbonFamily can offer..."></textarea>
+          </div>
+
+          <div class="form-group" style="display:flex;align-items:flex-start;gap:0.75rem;">
+            <input type="checkbox" id="consent" name="consent" required style="width:auto;margin-top:3px;flex-shrink:0;">
+            <label for="consent" style="font-size:0.82rem;color:var(--text-mid);font-weight:400;">I agree to be added to the GibbonFamily mailing list and for my contact details to be stored for network coordination purposes. I can unsubscribe at any time.</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;text-align:center;padding:0.8rem;">Register my interest</button>
+        </form>
+
+        <div id="successMsg" style="display:none;background:var(--canopy);border-radius:var(--radius-lg);padding:2rem;text-align:center;margin-top:1rem;">
+          <div style="font-size:2.5rem;margin-bottom:0.75rem;">🦧</div>
+          <h3 style="color:var(--forest);margin-bottom:0.5rem;">You're registered!</h3>
+          <p style="font-size:0.9rem;color:var(--forest);">Thank you for joining GibbonFamily. We'll be in touch soon with updates about the network.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="page-section bg-tint">
+    <div class="container">
+      <p class="section-label">Other Ways to Connect</p>
+      <h2>Stay in touch</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-top:1.5rem;">
+        <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">📧</div>
+          <h4 style="margin-bottom:0.4rem;">Mailing list</h4>
+          <p style="font-size:0.82rem;">Stay updated on network developments, collaborative projects, and events.</p>
+        </div>
+        <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">💬</div>
+          <h4 style="margin-bottom:0.4rem;">Community forum</h4>
+          <p style="font-size:0.82rem;">An online space for informal discussion, field questions, and sharing experiences. (Coming soon.)</p>
+        </div>
+        <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">🎥</div>
+          <h4 style="margin-bottom:0.4rem;">Virtual meetings</h4>
+          <p style="font-size:0.82rem;">Periodic online meetings to discuss research, share methods, and plan collaborations.</p>
+        </div>
+        <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">🔬</div>
+          <h4 style="margin-bottom:0.4rem;">Collaborative projects</h4>
+          <p style="font-size:0.82rem;">Opportunities to contribute to and lead multi-site research projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🦧</span>
+        <span class="logo-text">GibbonFamily</span>
+        <p>A global grassroots network of gibbon researchers.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="species.html">Gibbon Species</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="data.html">Data Sharing</a></li>
+          <li><a href="join.html">Join Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:gibbonfamily@example.com">gibbonfamily@example.com</a></p>
+        <p style="margin-top:1rem;font-size:0.8rem;color:#aaa;">© 2025 GibbonFamily.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('joinForm').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+      window.scrollTo({ top: document.getElementById('successMsg').offsetTop - 100, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
 
